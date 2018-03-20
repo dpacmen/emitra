@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <style>
+        .makeMain{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .ques{
+            height: 100vh;
+            width: 700px;
+            background-color: #e1bee7;
+            padding:30px;
+            overflow: auto;
+        }
+        .preview{
+            height: 100vh;
+            width: 400px;
+            background-color: lightblue;
+            vertical-align: middle;
+            background-image: url("previewbg.jpg");
+        }
+        .options{
+            width:100%;
+        }
+        .preview{
+            display: flex;
+            align-items: center
+        }
+        #answers{
+            display: flex;
+            flex-direction: column;
+            overflow: auto;
+
+        }
+        h2{
+            font-weight: bold;
+            color:black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="makeMain">
+        <div class="ques">
+
+            <label >Question</label>
+            <input type="text" class="form-control input-lg" id="title"  placeholder="Type your question here..">
+            <br><br>
+
+
+            <div id="answers">
+                <label >Answers/Options</label>
+                <div class="makeMain">
+                    <div class="options">
+                        <input type="text" class="form-control" placeholder="Option 1" id="1">
+                    </div>
+
+                </div>
+                <br>
+                <div class="makeMain">
+                    <div class="options">
+                        <input type="text" class="form-control" placeholder="Option 2" id="2">
+                    </div>
+
+                </div>
+                <br>
+                <div class="makeMain">
+                    <div class="options">
+                        <input type="text" class="form-control" placeholder="Option 3" id="3">
+                    </div>
+
+                </div>
+                <br>
+                <div class="makeMain">
+                    <div class="options">
+                        <input type="text" class="form-control" placeholder="Option 4" id="4">
+                    </div>
+
+                </div>
+                <br>
+
+
+            </div>
+            <button id="addOption" onclick="addOption()">+ Add option</button>
+            <button id="done">Done</button>
+        </div>
+
+        <div class="preview">
+            <div class="center-block">
+                <h2>Share your poll.</h2>
+            <input type="text" placeholder="dhgfgf" >
+            </div>
+        </div>
+    </div>
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
